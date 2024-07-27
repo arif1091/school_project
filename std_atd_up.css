@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 1.2em;
+}
+
+/* Side Navigation Styles */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Adjusted left position */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.side-nav.show {
+    left: 0;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    padding: 10px 20px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.side-nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styles */
+.profile-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Change card width */
+    max-width: 600px; /* Maximum width of the card */
+    margin: 100px auto 50px; /* Center the card and add margin-top */
+    padding: 20px; /* Add padding inside the card */
+    position: relative; /* Ensure relative positioning */
+}
+
+.card-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-block {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+/* Custom color for the labels */
+.label-custom-color {
+    color: #ffffff; /* Change this to your desired color */
+}
+
+
+/*card 02*/
+/* Style for form container */
+/* Style for form container */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Style for form label */
+  .form-label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* Style for select menu */
+  .form-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  /* Style for submit button */
+  .form-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  /* Hover effect for submit button */
+  .form-submit:hover {
+    background-color: #45a049;
+  }
+/* Table Styles */
+.table {
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); /* Light striped background */
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075); /* Lighter hover color */
+}
+
+/* Adjust column widths */
+.table .col-small {
+    width: 10%; /* Adjust the width as needed */
+}
+
+.table .col-medium {
+    width: 30%; /* Adjust the width as needed */
+}
+
+/*footer*/
+footer {
+    background-color: #222; /* Footer background color */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f6012a;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f6012a;
+}
+
+.footer-image {
+    text-align: left;
+}
+
+.footer-image img {
+    width: 200px;
+    height: auto;
+    margin: 0px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

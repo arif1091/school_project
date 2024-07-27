@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/student.css">
+</head>
+
+    <!-- Header -->
+    <header class="fixed-top bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="profile">
+                <img src="image/arif.jpeg" alt="Profile Picture" class="profile-pic">
+                <span class="username text-light ml-2">Arif Hasan</span>
+            </div>
+            <h3 class="text-light text-center mb-0">আইডিয়াল কিন্ডারগার্টেন</h3>
+            <button class="menu-btn btn btn-dark">&#9776; Menu</button>
+        </div>
+    </header>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="teacher.html">Teacher</a></li>
+                <li class="nav-item"><a class="nav-link" href="student.html">Student</a></li>
+                <li class="nav-item"><a class="nav-link" href="form.html">Admission</a></li>
+                <li class="nav-item"><a class="nav-link" href="accounts.html">Accounts</a></li>
+                <li class="nav-item"><a class="nav-link" href="book.html">Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="stuff.html">Stuff</a></li>
+                <li class="nav-item"><a class="nav-link" href="asset.html">Assets</a></li>
+                <li class="nav-item"><a class="nav-link" href="setting.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="attendence.html" class="card animated-card card-link">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Attendance</strong><br><br>Click to View</h5>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="student_login.html" class="card animated-card card-link">     
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Student Information</strong><br><br>Click to View</h5>   
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="view_attendence.html" class="card animated-card card-link">  
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>View Attendance</strong><br><br>Click to View</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="user_login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>আইডিয়াল কিন্ডার গার্টেন</li>
+                    <li>কালিয়াপাড়া,শাহরাস্তি,চাঁদপুর।</li>
+                    <li>Phone: +880 1234567891</li>
+                    <li>Email: info@example.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Developed By</h3>
+                <div class="footer-image">
+                    <a href="mailto:arifhasan1373@gmail.com">
+                        <img src="image/company.png" alt="Description of Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ideal Kindergarten. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for responsive menu button
+        $(document).ready(function() {
+            $('.menu-btn').on('click', function() {
+                $('.side-nav').toggleClass('show');
+            });
+        });
+
+        // Count animation
+        function animateCount(target, element) {
+            var count = 0;
+            var speed = 2000; // Animation speed in milliseconds
+            var increment = target / speed; // Increment value based on speed
+
+            var timer = setInterval(function() {
+                count += increment;
+                element.text(Math.ceil(count));
+                if (count >= target) {
+                    clearInterval(timer);
+                    element.text(target);
+                }
+            }, 1);
+        }
+
+        $(document).ready(function() {
+            $('.count').each(function () {
+                var target = parseInt($(this).attr('data-target'));
+                animateCount(target, $(this));
+            });
+        });
+    </script>
+
+</body>
+</html>

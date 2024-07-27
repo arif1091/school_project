@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <h2>আইডিয়াল কিন্ডার গার্টেন<br>শিক্ষার্থী ভর্তি ফরম</h2>
+            
+        </div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="student-name-bn">শিক্ষার্থীর নাম:</label>
+                    <input type="text" id="student-name-bn" name="student-name-bn" placeholder="বাংলা">
+                </div>
+                <div class="form-group image-upload">
+                    <label for="student-photo">শিক্ষার্থীর ছবি আপলোড করুন:</label>
+                    <input type="file" id="student-photo" name="student-photo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="student-name-en">শিক্ষার্থীর নাম :</label>
+                    <input type="text" id="student-name-en" name="student-name-en" placeholder="ইংরেজী">
+                </div>
+                <div class="form-group">
+                    <label for="father-name">পিতার নাম :</label>
+                    <input type="text" id="father-name" name="father-name" placeholder="বাংলায়">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mother-name">মাতার নাম :</label>
+                    <input type="text" id="mother-name" name="mother-name" placeholder="বাংলায়">
+                </div>
+                <div class="form-group">
+                    <label for="birth-date">জন্ম তারিখ:</label>
+                    <input type="date" id="birth-date" name="birth-date">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">বয়স:</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="birth-certificate-no">জন্ম নিবন্ধন নম্বর:</label>
+                    <input type="text" id="birth-certificate-no" name="birth-certificate-no">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="previous-school">বর্তমান ঠিকানা:</label>
+                    <input type="text" id="previous-school" name="previous-school" placeholder="গ্রাম">
+                </div>
+                <div class="form-group">
+                    <label for="address">.</label>
+                    <input type="text" id="address" name="address" placeholder="ডাকঘর">
+                </div>
+                <div class="form-group">
+                    <label for="previous-school">স্থায়ী ঠিকানা:</label>
+                    <input type="text" id="previous-school" name="previous-school"placeholder="গ্রাম">
+                </div>
+                <div class="form-group">
+                    <label for="address">.</label>
+                    <input type="text" id="address" name="address"placeholder="ডাকঘর">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Section"placeholder=" খানা ">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" id="phone" name="phone"placeholder="জেলা ">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email"placeholder=" খানা ">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" id="phone" name="phone"placeholder="জেলা">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guardian-name">ধর্ম :</label>
+                    <input type="text" id="guardian-name" name="guardian-name">
+                </div>
+                <div class="form-group">
+                    <label for="relation">লিঙ্গ:</label>
+                    <input type="text" id="section-filter" class="form-control" list="section-list">
+                                        <datalist id="section-list">
+                                            <option value="ছেলে">
+                                            <option value="মেয়ে">
+                                        </datalist>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guardian-phone"> পিতার পেশা :</label>
+                    <input type="text" id="guardian-phone" name="guardian-phone">
+                </div>
+                <div class="form-group">
+                    <label for="guardian-address">ফোন নম্বর:-</label>
+                    <input type="text" id="guardian-address" name="guardian-address" placeholder="+088">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guardian-phone"> পিতার মাসিক আয় :</label>
+                    <input type="text" id="guardian-phone" name="guardian-phone">
+                </div>
+                <div class="form-group">
+                    <label for="relation">যাতায়াত ব্যবস্থা :- </label>
+                    <input type="text" id="transport-filter" class="form-control" list="transport-list">
+                                        <datalist id="transport-list">
+                                            <option value="নিজস্ব">
+                                            <option value="প্রতিষ্ঠানের পরিবহন">
+                                        </datalist>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">অবিভাবক(পিতার অবর্তমানে)</label>
+                    <input type="email" id="email" name="email" placeholder="অবিভাবকের নাম">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">ফোন নম্বর:</label>
+                    <input type="text" id="phone" name="phone" placeholder="+088">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="গ্রাম">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" id="phone" name="phone"placeholder="ডাকঘর">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email"placeholder=" খানা ">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" id="phone" name="phone"placeholder="জেলা">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="student-name-en">পূর্ববর্তী প্রতিষ্ঠান :</label>
+                    <input type="text" id="student-name-en" name="student-name-en">
+                </div>
+                <div class="form-group">
+                    <label for="relation">শ্রেণী :- </label>
+                    <input type="text" id="cls-filter" class="form-control" list="cls-list">
+                                        <datalist id="cls-list">
+                                            <option value=" play ">
+                                            <option value=" 1 ">
+                                            <option value=" 2 ">
+                                            <option value=" 3 ">
+                                            <option value=" 4 "> 
+                                            <option value=" 5 ">   
+                                        </datalist>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="relation">ভর্তিচ্ছু শ্রেণী :- </label>
+                    <input type="text" id="cls-filter" class="form-control" list="cls-list">
+                                        <datalist id="cls-list">
+                                            <option value=" play ">
+                                            <option value=" 1 ">
+                                            <option value=" 2 ">
+                                            <option value=" 3 ">
+                                            <option value=" 4 "> 
+                                            <option value=" 5 "> 
+                                        </datalist>
+                </div>
+                
+                <div class="form-group">
+                    <label for="father-name">অবিভাবকের ইমেইল:</label>
+                    <input type="text" id="father-name" name="father-name" placeholder="abc***@gmail.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-sm" onclick="handleSubmit()">Submit</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="handlePrint()">Print</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function handleSubmit() {
+        alert("Your form has been submitted!");
+        window.location.href = "user.html"; // Replace with your desired link
+    }
+    function handlePrint() {
+            window.print();
+        }
+</script>
+</html>
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('image/back.png') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .payment-method {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Online Payment</h2>
+        <form id="paymentForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="uniqueId">Unique ID</label>
+                    <input type="text" class="form-control" id="uniqueId" placeholder="Enter your unique ID" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="rollNo">Roll Number</label>
+                    <input type="text" class="form-control" id="rollNo" placeholder="Enter your roll number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="classSection">Class (Section)</label>
+                    <select class="form-control" id="classSection" required>
+                        <option value="">Select your class</option>
+                        <option value="class1">Class 1 (A)</option>
+                        <option value="class2">Class 2 (B)</option>
+                        <option value="class3">Class 3 (C)</option>
+                        <option value="class4">Class 4 (D)</option>
+                        <option value="class5">Class 5 (E)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="amount">Amount</label>
+                    <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="month">Month</label>
+                    <select class="form-control" id="month" required>
+                        <option value="">Select month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Payment Method Selection -->
+            <div class="form-group">
+                <label class="d-block">Payment Method</label>
+                <div class="payment-method">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">
+                            Credit/Debit Card
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="mobileBanking" value="mobileBanking">
+                        <label class="form-check-label" for="mobileBanking">
+                            Mobile Banking
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Payment Fields -->
+            <div id="cardFields">
+                <div class="form-group">
+                    <label for="cardNumber">Credit Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter credit card number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+                </div>
+            </div>
+
+            <!-- Mobile Banking Fields -->
+            <div id="mobileBankingFields" style="display: none;">
+                <div class="form-group">
+                    <label for="mobileService">Mobile Banking Service</label>
+                    <select class="form-control" id="mobileService" required>
+                        <option value="">Select a service</option>
+                        <option value="bkash">bKash</option>
+                        <option value="nagad">Nagad</option>
+                        <option value="rocket">Rocket</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="text" class="form-control" id="mobileNumber" placeholder="Enter your mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="transactionId">Transaction ID</label>
+                    <input type="text" class="form-control" id="transactionId" placeholder="Enter transaction ID" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Payment</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('input[name="paymentMethod"]').forEach((elem) => {
+            elem.addEventListener("change", function(event) {
+                const value = event.target.value;
+                if (value === "creditCard") {
+                    document.getElementById("cardFields").style.display = "block";
+                    document.getElementById("mobileBankingFields").style.display = "none";
+                } else if (value === "mobileBanking") {
+                    document.getElementById("cardFields").style.display = "none";
+                    document.getElementById("mobileBankingFields").style.display = "block";
+                }
+            });
+        });
+
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your payment has been successfully submitted. An SMS confirmation will be sent shortly.');
+        });
+    </script>
+</body>
+</html>

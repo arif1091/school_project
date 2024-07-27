@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Update</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/book_update.css">
+    <style>
+        /* Additional or modified CSS styles can go here */
+    </style>
+</head>
+
+
+    <!-- Header -->
+    <header class="fixed-top bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="profile">
+                <img src="image/arif.jpeg" alt="Profile Picture" class="profile-pic">
+                <span class="username text-light ml-2">Arif Hasan</span>
+            </div>
+            <h3 class="text-light text-center mb-0">আইডিয়াল কিন্ডারগার্টেন</h3>
+            <button id="toggleCardBtn" class="menu-btn btn btn-dark">&#9776; Menu</button>
+        </div>
+    </header>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="teacher.html">Teacher</a></li>
+                <li class="nav-item"><a class="nav-link" href="student.html">Student</a></li>
+                <li class="nav-item"><a class="nav-link" href="form.html">Admission</a></li>
+                <li class="nav-item"><a class="nav-link" href="accounts.html">Accounts</a></li>
+                <li class="nav-item"><a class="nav-link" href="book.html">Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="stuff.html">Stuff</a></li>
+                <li class="nav-item"><a class="nav-link" href="asset.html">Assets</a></li>
+                <li class="nav-item"><a class="nav-link" href="setting.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Books</h5>
+                <select class="form-control mt-3">
+                    <option>Choose Year</option>
+                    <option value="option1">2024</option>
+                    <option value="option2">2025</option>
+                    <option value="option3">2026</option>
+                </select>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="#" id="toggleSecondCardBtn" class="btn btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card initially hidden -->
+        <div id="secondCard" class="card mt-3" style="display: none;">
+            <div class="card-body text-center mb-4"> <!-- Added mb-4 for margin bottom -->
+                <h5 class="card-title mb-4"><strong>2024</strong></h5> <!-- Centered and added margin bottom -->
+                <!-- Form row for date selection -->
+                <div class="form-row mb-3">
+                    <div class="col">
+                        <label for="startDate"><strong>Received Date</strong></label>
+                        <input type="date" class="form-control" placeholder="Start Date">
+                    </div>
+                    <div class="col">
+                        <label for="startDate"><strong>Delivered Date</strong></label>
+                        <input type="date" class="form-control" placeholder="End Date">
+                    </div>
+                </div>
+                <!-- Table with 4 columns -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Class</th>
+                            <th scope="col">Received Amount</th>
+                            <th scope="col">Delivered Amount</th>
+                            <th scope="col">Remain Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Play</td>
+                            <td><input type="number" class="form-control" name="received_play" value="7"></td>
+                            <td><input type="number" class="form-control" name="delivered_play" value="5"></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>One</td>
+                            <td><input type="number" class="form-control" name="received_one" value="13"></td>
+                            <td><input type="number" class="form-control" name="delivered_one" value="10"></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><input type="number" class="form-control" name="total_received" value="20" readonly></td>
+                            <td><input type="number" class="form-control" name="total_delivered" value="15" readonly></td>
+                            <td><strong>5</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="book.html" class="btn btn-primary mt-3">Submit</a> <!-- Added link to the button -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="user_login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>আইডিয়াল কিন্ডার গার্টেন</li>
+                    <li>কালিয়াপাড়া,শাহরাস্তি,চাঁদপুর।</li>
+                    <li>Phone: +880 1234567891</li>
+                    <li>Email: info@example.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Developed By</h3>
+                <div class="footer-image">
+                    <a href="mailto:arifhasan1373@gmail.com">
+                        <img src="image/company.png" alt="Description of Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ideal Kindergarten. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for responsive menu button
+        $(document).ready(function() {
+            $('#toggleCardBtn').on('click', function() {
+                $('.side-nav').toggleClass('show');
+            });
+
+            // Toggle second card visibility
+            $('#toggleSecondCardBtn').on('click', function() {
+                $('#secondCard').toggle();
+            });
+        });
+    </script>
+</body>
+</html>
